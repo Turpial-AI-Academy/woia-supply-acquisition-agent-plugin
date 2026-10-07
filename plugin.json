@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "woia-supply-acquisition",
+  "version": "0.5.0",
+  "description": "Coordinate generic supply intake and source-backed readiness through Core and owning providers.",
+  "author": {
+    "name": "Turpial AI Academy",
+    "url": "https://github.com/Turpial-AI-Academy"
+  },
+  "homepage": "https://github.com/Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
+  "repository": "https://github.com/Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
+  "license": "MIT",
+  "keywords": ["agent-plugin", "woia-supply-acquisition"]
+}
