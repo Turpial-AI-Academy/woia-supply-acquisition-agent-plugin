@@ -3,13 +3,13 @@ export const EXPORTED_SLOTS = Object.freeze(['service-intake','representation-au
 const text = x => typeof x === 'string' && x.trim().length > 0;
 export function evaluateIntake(input) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('intake object required');
-  for (const key of ['task_ref','subject_ref','service','next_action','source_map_revision','idempotency_key']) {
+  for (const key of ['task_ref','subject_ref','service','next_action','source_map_revision','idempotency_key','organization_ref','actor_ref','purpose']) {
     if (!text(input[key])) throw new Error(`${key} required`);
   }
   if (!Array.isArray(input.requirements) || !Array.isArray(input.contributions)) throw new Error('requirements and contributions required');
   const blockers = [];
   if (input.effect_status === 'UNKNOWN') blockers.push('RECONCILE_BEFORE_RETRY');
-  if (input.authority?.status !== 'ACCEPTED' || !text(input.authority?.decision_ref) || !text(input.authority?.owner) || input.authority?.scope !== input.next_action || input.authority?.source_map_revision !== input.source_map_revision) blockers.push('COMPETENT_SCOPED_AUTHORITY_REQUIRED');
+  if (input.authority?.status !== 'ACCEPTED' || input.authority?.current !== true || input.authority?.revoked !== false || !text(input.authority?.decision_ref) || !text(input.authority?.owner) || input.authority?.scope !== input.next_action || input.authority?.source_map_revision !== input.source_map_revision || ['organization_ref','actor_ref','purpose','subject_ref','service'].some(key => input.authority?.[key] !== input[key])) blockers.push('COMPETENT_SCOPED_AUTHORITY_REQUIRED');
   const ids = new Set();
   for (const r of input.requirements) {
     if (!text(r.id) || ids.has(r.id)) throw new Error('unique requirement IDs required');

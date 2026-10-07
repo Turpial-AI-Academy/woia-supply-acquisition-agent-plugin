@@ -1,8 +1,106 @@
 {
- "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,
- "required":["task_ref","subject_ref","service","next_action","source_map_revision","idempotency_key","authority","requirements","contributions","continuity"],
- "properties": {
- "task_ref":{"type":"string","minLength":1},"subject_ref":{"type":"string","minLength":1},"service":{"type":"string","minLength":1},"next_action":{"type":"string","minLength":1},"source_map_revision":{"type":"string","minLength":1},"idempotency_key":{"type":"string","minLength":1},
- "authority":{"type":"object"},"requirements":{"type":"array","items":{"type":"object","required":["id","action","status","evidence_ref","source_ref","version","accepted_by"]}},"contributions":{"type":"array","items":{"type":"object","required":["request_ref","owner","objective","shared_ref","status"]}},"continuity":{"type":"object","required":["owner","review_ref"]},"transfer":{"type":"object"},"effect_status":{"enum":["NONE","CONFIRMED","UNKNOWN"]}
- }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_ref",
+    "subject_ref",
+    "service",
+    "next_action",
+    "source_map_revision",
+    "idempotency_key",
+    "authority",
+    "requirements",
+    "contributions",
+    "continuity",
+    "organization_ref",
+    "actor_ref",
+    "purpose"
+  ],
+  "properties": {
+    "task_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subject_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "service": {
+      "type": "string",
+      "minLength": 1
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_map_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority": {
+      "type": "object"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "action",
+          "status",
+          "evidence_ref",
+          "source_ref",
+          "version",
+          "accepted_by"
+        ]
+      }
+    },
+    "contributions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "request_ref",
+          "owner",
+          "objective",
+          "shared_ref",
+          "status"
+        ]
+      }
+    },
+    "continuity": {
+      "type": "object",
+      "required": [
+        "owner",
+        "review_ref"
+      ]
+    },
+    "transfer": {
+      "type": "object"
+    },
+    "effect_status": {
+      "enum": [
+        "NONE",
+        "CONFIRMED",
+        "UNKNOWN"
+      ]
+    },
+    "organization_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "actor_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "purpose": {
+      "minLength": 1,
+      "type": "string"
+    }
+  }
 }
