@@ -1,42 +1,9 @@
-# woia-supply-acquisition
+# WOIA Supply Acquisition v0.5.0
 
-Portable Agent Plugin for Coordinate generic supply intake and source-backed readiness through Core and owning providers..
+Generic reusable supply acquisition department methodology. Core v0.5.3 is the sole hard dependency; no Real Estate delta is implemented.
 
-## Capability
+Use [the skill](skills/woia-supply-acquisition/SKILL.md) and [contract](skills/woia-supply-acquisition/references/acquisition-contract.md) for scoped intake, authority, readiness, receiver contribution and accepted continuity. The deterministic evaluator executes no external or financial effects and stores no business master.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
+Organization source maps, authorities, service criteria, people and bindings remain private configuration. Exact base/delta/provider qualification is separate from range eligibility. Local engineering certification does not imply runtime activation, Operator E2E or Production Ready.
 
-The plugin adapts to the repository it operates on without requiring the consumer to adopt WOIA's authoring toolchain.
-
-## Portable package
-
-~~~text
-plugin.json
-README.md
-CHANGELOG.md
-LICENSE
-skills/**
-# optional source diagnostic when retained by the repository
-CHECKSUMS.sha256
-~~~
-
-`CHECKSUMS.sha256` is optional source evidence, not a required portable/release artifact.
-
-Add `mcp.json` only if the capability genuinely requires MCP.
-
-## Consumer requirements
-
-Document only genuine capability/runtime requirements here. Do not list maintenance Node/pnpm/Mise/Docker unless the portable capability itself truly needs them.
-
-## Development
-
-~~~text
-mise install
-mise run bootstrap
-mise run doctor
-mise run ci:fast
-mise run ci:extended
-mise run release:check
-~~~
+Maintenance: mise run bootstrap; mise run doctor; mise run test; mise run ci:fast. Commit the exact candidate before mise run release:check and Ecosystem plugin:certify-thin.
