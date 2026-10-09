@@ -1,9 +1,39 @@
 {
-  "schema": "dev.woia.department-orchestrator/v1", "version": "0.5.0", "authoring_profile": "thin", "department": "supply-acquisition", "execution_model": "core-task-acquisition-methodology",
-  "requires_plugins": [{"name":"woia-core","minimum_version":"0.5.3"}],
-  "core_release": {"repository":"Turpial-AI-Academy/woia-core-agent-plugin","version":"0.5.3","ref":"v0.5.3","commit":"7a05b942bc244b385ea1403ed5dc975fdae22e24","tree":"f18ebe8268478aea7551713fafbbf90a3e54b0cc"},
-  "exported_slots": ["service-intake","representation-authorization","readiness-evaluation","receiver-contribution","outcome-continuity"],
-  "allowed_delta_operations": ["ADD","SPECIALIZE","NARROW"],
-  "inherited_gates": ["base-conformance","authority-narrowing","provider-closure","update-recovery"],
+  "schema": "dev.woia.department-orchestrator/v1",
+  "version": "0.5.6",
+  "authoring_profile": "thin",
+  "department": "supply-acquisition",
+  "execution_model": "core-task-acquisition-methodology",
+  "requires_plugins": [
+    {
+      "name": "woia-core",
+      "minimum_version": "0.5.6"
+    }
+  ],
+  "core_release": {
+    "repository": "Turpial-AI-Academy/woia-core-agent-plugin",
+    "version": "0.5.6",
+    "ref": "v0.5.3",
+    "commit": "7a05b942bc244b385ea1403ed5dc975fdae22e24",
+    "tree": "f18ebe8268478aea7551713fafbbf90a3e54b0cc"
+  },
+  "exported_slots": [
+    "service-intake",
+    "representation-authorization",
+    "readiness-evaluation",
+    "receiver-contribution",
+    "outcome-continuity"
+  ],
+  "allowed_delta_operations": [
+    "ADD",
+    "SPECIALIZE",
+    "NARROW"
+  ],
+  "inherited_gates": [
+    "base-conformance",
+    "authority-narrowing",
+    "provider-closure",
+    "update-recovery"
+  ],
   "contracts_directory": "skills/woia-supply-acquisition/references"
 }

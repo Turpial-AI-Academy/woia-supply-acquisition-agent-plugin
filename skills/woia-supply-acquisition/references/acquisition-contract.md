@@ -10,7 +10,7 @@ Canonical sources: ADR-0008 and docs/20/21/22/24/25/26 at Real Estate b716f1d1c0
 - receiver-contribution: distinct outcome only; shared data/Knowledge directly read. Core request/result correlation with receiver ownership; ACK is not acceptance and contribution is not parent completion.
 - outcome-continuity: accepted sources, blockers, owner, next review and receiver-accepted transfer. Material changes require scoped reevaluation, not history rewriting or perpetual downstream ownership.
 
-Generic intake/readiness/contribution/continuity stays here. Property/Mandate/Listing/Lease contracts and service routes stay domain providers and the W4 delta. Provider implementation, Core mechanics and organization policies are separate. No vendor/backend/legal rule/private account is selected.
+Generic intake/readiness/contribution/continuity stays here. Property/Mandate/Listing/Lease contracts and service routes stay domain providers and the delta. Provider implementation, Core mechanics and organization policies are separate. No vendor/backend/legal rule/private account is selected.
 
 ## Composition and recovery
 

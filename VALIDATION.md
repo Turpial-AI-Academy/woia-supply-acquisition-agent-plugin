@@ -1,3 +1,0 @@
-# Validation
-
-Tests cover generic non-Real Estate intake, five exact slots, missing source/authority/evidence, mismatched action/revision, UNKNOWN reconciliation, ACK versus receiver acceptance, transfer acceptance, immutable input and schema/manifest contract. Run mise run test and mise run ci:fast; commit clean candidate before release:check and official Ecosystem thin certification. MIT license is checked against the canonical Git blob independently. Checksum manifest is optional and absent. Live adapters, selected specialization pair, Operator E2E and Production Ready remain NOT_RUN/false.
