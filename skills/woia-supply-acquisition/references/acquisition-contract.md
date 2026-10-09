@@ -1,6 +1,5 @@
 # Generic supply acquisition contract
 
-Canonical sources: ADR-0008 and docs/20/21/22/24/25/26 at Real Estate b716f1d1c0e2bc5ecf946043b337a2ddba4285f0.
 
 ## Exported methodology slots
 
