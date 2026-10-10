@@ -1,6 +1,6 @@
-# WOIA Supply Acquisition v0.5.7
+# WOIA Supply Acquisition v0.5.8
 
-Generic reusable supply acquisition department methodology. Core v0.5.7 is the sole hard dependency; no Real Estate delta is implemented.
+Generic reusable supply acquisition department methodology. Core v0.5.7 is the sole hard dependency. Qualified specializations supply bounded domain inputs through the exported methodology slots.
 
 Use [the skill](skills/woia-supply-acquisition/SKILL.md) and [contract](skills/woia-supply-acquisition/references/acquisition-contract.md) for scoped intake, authority, readiness, receiver contribution and accepted continuity. The deterministic evaluator executes no external or financial effects and stores no business master.
 

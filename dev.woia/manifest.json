@@ -1,6 +1,6 @@
 {
   "schema": "dev.woia.department-orchestrator/v1",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "authoring_profile": "thin",
   "department": "supply-acquisition",
   "execution_model": "core-task-acquisition-methodology",

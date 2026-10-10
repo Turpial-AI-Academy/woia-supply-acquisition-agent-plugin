@@ -15,4 +15,4 @@ Read [the acquisition contract](references/acquisition-contract.md) before evalu
 5. Use [evaluateIntake](scripts/evaluate-intake.mjs) to evaluate scoped inputs without writing facts or executing effects. Report accepted sources, blockers, permitted next action and owned pending work/review.
 6. Require receiver acceptance before transfer; notification is insufficient. Reconcile unknown effects before retry with the same idempotency key. Material source changes invalidate affected readiness, not historical evidence.
 
-Export only the five named methodology slots in the contract. ADD/SPECIALIZE/NARROW cannot broaden authority or change Core mechanics. Do not activate unqualified exact pairs or competing roots. Real Estate delta implementation is , outside this base. Local tests are not Operator E2E or Production Ready.
+Export only the five named methodology slots in the contract. ADD/SPECIALIZE/NARROW cannot broaden authority or change Core mechanics. Do not activate unqualified exact pairs or competing roots. Specializations supply bounded domain inputs through their exact qualified bindings. Local tests are not Operator E2E or Production Ready.
